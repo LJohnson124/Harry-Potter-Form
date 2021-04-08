@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter HTML Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Harry Potter Form</h1>
+        <p>What do you know about the Harry Potter franchise?</p>
+    </header>
+
+    <div class="form-container">
+        <form>
+            <div class="name">
+                <div class="input">
+                    <label for="first-name">First name</label>
+                    <input type="text" placeholder="Enter first name" required id="first-name">
+                    <div class="input-indicator"></div>
+                </div>
+
+                <div class="input">
+                    <label for="last-name">Last name</label>
+                    <input type="text" placeholder="Enter last name" required id="last-name">
+                    <div class="input-indicator"></div>
+                </div>
+            </div>
+
+            <div class="input">
+                <label for="email-label">Email address (optional)</label>
+                <input type="email" placeholder="Enter your email">
+                <div class="input-indicator"></div>
+            </div>
+
+            <div class="dropdown">
+                <label for="introduction">How were you introduced to Harry Potter?</label>
+                <select name="introduction-to-hp" id="introduction-dropdown">
+                    <option name="introduction-to-hp" id="select-a-option" value="select-a-option" disabled selected
+                        value>Select a option</option>
+                    <option name="introduction-to-hp" id="parents-movies" value="parents">A family member got me to
+                        watch the movies</option>
+                    <option name="introduction-to-hp" id="parents-books" value="parents">A family member got me to read
+                        the books</option>
+                    <option name="introduction-to-hp" id="movies" value="movies">I decided to watch the movies myself
+                    </option>
+                    <option name="introduction-to-hp" id="books" value="books">I decided to read the books myself
+                    </option>
+                </select>
+            </div>
+
+            <h3>Now, let's see what you know about <p>Harry Potter...</p>
+            </h3>
+
+            <div class="radio">
+                <div class="question-and-options">
+                    <div class="question">
+                        <label for="address-question">What is the Dursley's address?</label>
+                    </div>
+
+                    <label for="grimmauld-place">
+                        <input type="radio" name="address" id="grimmauld-place" value="grimmauld-place">Number 12,
+                        Grimmauld Place
+                    </label>
+
+                    <label for="burrow">
+                        <input type="radio" name="address" id="burrow" value="burrow">The Burrow
+                    </label>
+
+                    <label for="privet-drive">
+                        <input type="radio" name="address" id="privet-drive" value="privet-drive">4 Privet Drive (correct)
+                    </label>
+
+                    <label for="cottage">
+                        <input type="radio" name="address" id="cottage" value="cottage">Shell Cottage
+                    </label>
+                </div>
+
+                <div class="question-and-options">
+                    <div class="question">
+                        <label for="godfather-question">Who is Harry Potter's godfather?</label>
+                    </div>
+
+                    <label for="lupin">
+                        <input type="radio" name="godfather" id="lupin" value="lupin">Remus Lupin
+                    </label>
+
+                    <label for="wormtail">
+                        <input type="radio" name="godfather" id="wormtail" value="wormtail">Peter Pettigrew/Wormtail
+                    </label>
+
+                    <label for="padfoot">
+                        <input type="radio" name="godfather" id="padfoot" value="padfoot">Sirius Black/Padfoot (correct)
+                    </label>
+
+                    <label for="mr-weasley">
+                        <input type="radio" name="godfather" id="mr-weasley" value="mr-weasley">Arthur Weasley
+                    </label>
+                </div>
+
+                <div class="question-and-options">
+                    <div class="question">
+                        <label for="teacher-question">Which class has a different teacher every year?</label>
+                    </div>
+
+                    <label for="defence-against-the-dark-arts">
+                        <input type="radio" name="teacher" id="defence-against-the-dark-arts" value="defence-against-the-dark-arts">Defence Against the Dark Arts (correct)
+                    </label>
+
+                    <label for="transfiguration">
+                        <input type="radio" name="teacher" id="transfiguration" value="transfiguration">Transfiguration
+                    </label>
+
+                    <label for="potions">
+                        <input type="radio" name="teacher" id="potions" value="potions">Potions
+                    </label>
+
+                    <label for="charms">
+                        <input type="radio" name="teacher" id="charms" value="charms">Charms
+                    </label>
+                </div>
+
+                <div class="question-and-options">
+                    <div class="question">
+                        <label for="hagrid-question">What subject does Hagrid teach at Hogwarts?</label>
+                    </div>
+
+                    <label for="astronomy">
+                        <input type="radio" name="hagrid" id="astronomy" value="astronomy">Astronomy
+                    </label>
+
+                    <label for="herbology">
+                        <input type="radio" name="herbology" id="hagrid" value="herbology">Herbology
+                    </label>
+
+                    <label for="care-of-magical-creatures">
+                        <input type="radio" name="hagrid" id="care-of-magical-creatures" value="care-of-magical-creatures">Care of Magical Creatures (correct)
+                    </label>
+
+                    <label for="history-of-magic">
+                        <input type="radio" name="hagrid" id="history-of-magic" value="history-of-magic">History of Magic
+                    </label>
+                </div>
+
+                <div class="question-and-options">
+                    <div class="question">
+                        <label for="centaur-question">Which centaur taught at Hogwarts?</label>
+                    </div>
+
+                    <label for="firenze">
+                        <input type="radio" name="centaur" id="firenze" value="firenze">Firenze (correct)
+                    </label>
+
+                    <label for="bane">
+                        <input type="radio" name="centaur" id="bane" value="bane">Bane
+                    </label>
+
+                    <label for="ronan">
+                        <input type="radio" name="centaur" id="ronan" value="ronan">Ronan
+                    </label>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

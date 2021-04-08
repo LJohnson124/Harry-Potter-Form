@@ -14,6 +14,10 @@
     outline: none;
 }
 
+html {
+    height: fit-content;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(152deg, #00b7ff, #0084ff, #0059ff, #00f, #6f00ff, #9900ff, #b700ff);
@@ -61,6 +65,10 @@ h3 p {
     margin: 0 auto;
     border-radius: 7px;
     margin-bottom: 80px;
+}
+
+form {
+    width: 100%;
 }
 
 .input {
@@ -133,7 +141,7 @@ h3 p {
 }
 
 .dropdown option {
-    font-size: 20px;
+    font-size: 21px;
 }
 
 .radio-and-checkboxes label {
@@ -159,7 +167,7 @@ h3 p {
     margin-top: 24px;
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 810px) {
     h1 {
         font-size: 50px;
     }
@@ -203,7 +211,7 @@ h3 p {
     }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 420px) {
     h1 {
         font-size: 30px;
     }

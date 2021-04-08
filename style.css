@@ -87,7 +87,7 @@ form {
     width: 100%;
     font-size: inherit;
     border: none;
-    border-radius: none;
+    border-radius: 0;
     border-bottom: 3px solid var(--border-color);
     outline: none;
     padding: 0;
